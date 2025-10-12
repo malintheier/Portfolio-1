@@ -499,6 +499,21 @@ main {
     grid-template-columns: 1fr;
   }
 
+  .card-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-container img {
+    height: auto;
+    width: 80px;
+    margin-bottom: 1rem;
+  }
+
+  .card-text {
+    align-items: center;
+  }
+
   #cv-section h2 {
     font-size: 1.4rem;
   }
