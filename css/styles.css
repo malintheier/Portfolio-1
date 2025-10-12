@@ -128,7 +128,6 @@ main {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #333;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(4px);
 }
 
