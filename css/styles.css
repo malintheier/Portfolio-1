@@ -542,6 +542,10 @@ main {
   .contact-form button {
     width: 100%;
   }
+
+  footer {
+    min-height: 1px;
+  }
 }
 
 @media (min-width: 1800px) {
