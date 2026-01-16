@@ -1,6 +1,7 @@
 # 🎓 Frontend Portfolio – Malin
 
-<img width="2279" height="1252" alt="image" src="https://github.com/user-attachments/assets/660903f3-9764-428b-af82-86ad3ee391e3" />
+<img width="1120" height="563" alt="image" src="https://github.com/user-attachments/assets/5a87c19c-f70d-419b-aca9-5772d54664d1" />
+
 
 
 This is my personal portfolio website built as part of my frontend development studies at Noroff. The site showcases three selected projects and reflects my progress in coding, design, and documentation.
