@@ -1,6 +1,6 @@
-const links = document.querySelectorAll('.section-nav a');
-const content = document.getElementById('section-content');
-const title = document.getElementById('section-title');
+const links = document.querySelectorAll(".section-nav a");
+const content = document.getElementById("section-content");
+const title = document.getElementById("section-title");
 
 const sections = {
   about: {
@@ -30,7 +30,7 @@ const sections = {
           </div>
       </div>
     </div>
-    `
+    `,
   },
   portfolio: {
     title: "Portfolio",
@@ -69,29 +69,7 @@ const sections = {
         </div>
       </div>
     </div> 
-    `
-  },
-  coverLetter: {
-    title: "Cover Letter",
-    html: `
-    <div id="cover-letter-section">
-      <div class="cover-letter">
-        <p><strong>Malin Heier</strong><br>
-        Rakkestad, Østfold, Norge<br>
-        <a href="mailto:malintheier@gmail.com">malintheier@gmail.com</a> | +47 940 59 733</p>
-        <p>[Hiring Manager]<br>
-        [Company Name]<br>
-        [Company Address]</p>
-        <p>Dear Hiring Manager,</p>
-        <p>I am writing to express my interest in the front-end developer position at [Company Name]. As a dedicated student currently enrolled in a part-time online program in front-end development, I am excited about the opportunity to contribute my technical skills, design sensibility, and passion for user-centered digital experiences to your team.</p>
-        <p>Throughout my studies, I have built a strong foundation in HTML, CSS, and JavaScript, with a particular focus on responsive design and clean code. I’ve also worked extensively with tools such as Figma, GitHub, and VS Code, and I take pride in creating clean, accessible interfaces that balance functionality with visual clarity. My recent portfolio project showcases features I have implemented to enhance usability and engagement across devices.</p>
-        <p>What draws me to [Company Name] is your commitment to [something specific about the company]. Your mission aligns closely with my own values of clarity, authenticity, and continuous improvement. I’m particularly inspired by [product/initiative/value] and would be thrilled to contribute to projects that make a meaningful impact.</p>
-        <p>I would welcome the opportunity to discuss how my skills and enthusiasm can support your team’s goals. Thank you for considering my application. I am available for an interview at your convenience and look forward to hearing from you.</p>
-        <p>Kind regards,<br>
-        <strong>Malin Heier</strong></p>
-      </div>
-    </div>
-    `
+    `,
   },
   cv: {
     title: "CV",
@@ -170,7 +148,7 @@ const sections = {
         <li>Quick to learn and adaptable to new systems and tools</li>
       </ul>
     </div>
-    `
+    `,
   },
   contact: {
     title: "Contact",
@@ -198,31 +176,31 @@ const sections = {
           </form>
       </div>
     </div>
-    `
-  }
+    `,
+  },
 };
 
-links.forEach(link => {
-  link.addEventListener('click', e => {
+links.forEach((link) => {
+  link.addEventListener("click", (e) => {
     e.preventDefault();
-    if (link.classList.contains('active')) return;
+    if (link.classList.contains("active")) return;
 
-    links.forEach(l => l.classList.remove('active'));
-    link.classList.add('active');
+    links.forEach((l) => l.classList.remove("active"));
+    link.classList.add("active");
 
     const key = link.dataset.section;
 
-    content.classList.add('fade-out');
+    content.classList.add("fade-out");
 
     setTimeout(() => {
       title.textContent = sections[key].title;
       content.innerHTML = sections[key].html;
 
-      content.classList.remove('fade-out');
-      content.classList.add('fade-in');
+      content.classList.remove("fade-out");
+      content.classList.add("fade-in");
 
       setTimeout(() => {
-        content.classList.remove('fade-in');
+        content.classList.remove("fade-in");
       }, 250);
     }, 150);
   });

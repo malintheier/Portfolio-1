@@ -7,7 +7,7 @@
 body {
   background-color: #121212;
   color: #fff;
-  font-family: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
   display: flex;
   min-height: 100vh;
   padding: 2rem;
@@ -19,7 +19,7 @@ body {
   border-radius: 16px;
   padding: 2rem;
   width: 300px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   flex-shrink: 0;
 }
 
@@ -58,7 +58,7 @@ body {
 
 .personalia-container h2 {
   font-size: 0.9rem;
-  color: #CB748E;
+  color: #cb748e;
   margin-bottom: 0.25rem;
 }
 
@@ -91,7 +91,7 @@ main {
   background-color: #1e1e1e;
   border-radius: 16px;
   padding: 2rem;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
 }
@@ -101,8 +101,6 @@ main {
   overflow-y: auto;
   max-height: 100vh;
   padding-right: 1rem;
-  scrollbar-width: thin;
-  scrollbar-color: #CB748E #1e1e1e;
 }
 
 .content-section::-webkit-scrollbar {
@@ -114,7 +112,7 @@ main {
 }
 
 .content-section::-webkit-scrollbar-thumb {
-  background-color: #CB748E;
+  background-color: #cb748e;
   border-radius: 4px;
 }
 
@@ -128,13 +126,12 @@ main {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #333;
-  backdrop-filter: blur(4px);
 }
 
 .section-header h2 {
   font-size: 1.4rem;
   text-transform: uppercase;
-  color: #CB748E;
+  color: #cb748e;
 }
 
 .section-nav ul {
@@ -155,7 +152,7 @@ main {
 
 .section-nav a.active,
 .section-nav a:hover {
-  color: #CB748E;
+  color: #cb748e;
   background-color: #333;
 }
 
@@ -166,7 +163,7 @@ main {
   right: 0;
   bottom: -4px;
   height: 2px;
-  background-color: #CB748E;
+  background-color: #cb748e;
   border-radius: 2px;
 }
 
@@ -197,7 +194,7 @@ main {
   background-color: #2a2a2a;
   padding: 1rem;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s;
   gap: 1rem;
   align-items: center;
@@ -238,7 +235,7 @@ main {
 #cv-section h2 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
-  color: #CB748E;
+  color: #cb748e;
   border-bottom: 1px solid #333;
   padding-bottom: 0.5rem;
 }
@@ -291,7 +288,7 @@ main {
   background-color: #2a2a2a;
   border-radius: 12px;
   padding: 1rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s;
   display: flex;
   flex-direction: column;
@@ -346,7 +343,7 @@ main {
 
 .portfolio-links a {
   font-size: 0.85rem;
-  color: #CB748E;
+  color: #cb748e;
   text-decoration: none;
   background-color: #1e1e1e;
   padding: 0.4rem 0.8rem;
@@ -363,7 +360,7 @@ main {
   background-color: #2a2a2a;
   border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .cover-letter p {
@@ -378,7 +375,7 @@ main {
 }
 
 .cover-letter a {
-  color: #CB748E;
+  color: #cb748e;
   text-decoration: none;
 }
 
@@ -397,14 +394,14 @@ main {
   background-color: #2a2a2a;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .map-wrapper iframe {
   width: 100%;
   height: 300px;
   border-radius: 8px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.4);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
 }
 
 .contact-form {
@@ -415,7 +412,7 @@ main {
 
 .contact-form label {
   font-size: 0.9rem;
-  color: #CB748E;
+  color: #cb748e;
 }
 
 .contact-form input,
@@ -432,12 +429,12 @@ main {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #CB748E;
+  border-color: #cb748e;
   background-color: #262626;
 }
 
 .contact-form button {
-  background-color: #CB748E;
+  background-color: #cb748e;
   color: #121212;
   font-weight: 600;
   border: none;
@@ -461,13 +458,25 @@ main {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(4px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeOut {
-  from { opacity: 1; transform: translateY(0); }
-  to { opacity: 0; transform: translateY(4px); }
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(4px);
+  }
 }
 
 @media (max-width: 900px) {
